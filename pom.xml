@@ -15,9 +15,8 @@
     <jmh.version>1.22</jmh.version>
     <jmh.generator>default</jmh.generator>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <kotlin.version>1.4.31</kotlin.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -32,15 +31,9 @@
       <version>${jmh.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-stdlib-jdk8</artifactId>
-      <version>${kotlin.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-test</artifactId>
-      <version>${kotlin.version}</version>
-      <scope>test</scope>
+      <groupId>org.openjdk.jmh</groupId>
+      <artifactId>jmh-generator-bytecode</artifactId>
+      <version>${jmh.version}</version>
     </dependency>
   </dependencies>
 
@@ -70,20 +63,6 @@
     </pluginManagement>
     <plugins>
       <plugin>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-maven-plugin</artifactId>
-        <version>${kotlin.version}</version>
-        <executions>
-          <execution>
-            <id>add-source</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>compile</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <executions>
@@ -104,13 +83,6 @@
             </configuration>
           </execution>
         </executions>
-        <dependencies>
-          <dependency>
-            <groupId>org.openjdk.jmh</groupId>
-            <artifactId>jmh-generator-bytecode</artifactId>
-            <version>${jmh.version}</version>
-          </dependency>
-        </dependencies>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
