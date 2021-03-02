@@ -7,7 +7,7 @@ import org.example.istyle.IteratorStyleCalculator;
 import org.openjdk.jmh.annotations.*;
 
 @State(Scope.Benchmark)
-@BenchmarkMode(Mode.SingleShotTime)
+@BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 public class JavaBenchmark
 {
