@@ -7,6 +7,10 @@ In order to run locally:
 make java-benchmark
 ```
 
+### JMH how-to
+- [Default values](https://github.com/openjdk/jmh/blob/73217f9be59cf4d7cee4bab6d3829a8ce820faa4/jmh-core/src/main/java/org/openjdk/jmh/runner/Defaults.java)
+- [Tutorial](http://tutorials.jenkov.com/java-performance/jmh.html)
+
 ### Results
 | Benchmark                                                                             | Mode   | Threads | Samples | Score           | Score Error (99.9%) | Unit   |
 | ------------------------------------------------------------------------------------- | ------ | ------- | ------- | --------------- | ------------------- | ------ |
