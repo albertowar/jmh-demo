@@ -5,7 +5,9 @@ import org.openjdk.jmh.annotations.*;
 import java.util.concurrent.TimeUnit
 
 @State(Scope.Benchmark)
-@BenchmarkMode(Mode.AverageTime)
+@BenchmarkMode(Mode.All)
+@Warmup(time = 1)
+@Measurement(time = 1)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 open class KotlinBenchmark() {
     companion object {
