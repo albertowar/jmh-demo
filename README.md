@@ -1,10 +1,13 @@
-# Instructions
+## JVM benchmark
+
+### How to run
 In order to run locally:
 
 ```
 make run
 ```
 
+### Results
 # Results
 | Benchmark                                                                             | Mode   | Threads | Samples | Score           | Score Error (99.9%) | Unit   |
 | ------------------------------------------------------------------------------------- | ------ | ------- | ------- | --------------- | ------------------- | ------ |
@@ -57,3 +60,24 @@ make run
 | iteratorStyleCalculator                                     | ss     | 1       | 5       | 1905480.000000  | 1208848.422987      | ns/op  |
 | kotlinStyleCalculator                                     | ss     | 1       | 5       | 88125760.000000 | 17243120.114739     | ns/op  |
 |                                                                                       |
+
+## Go benchmark
+### How to run
+In order to run the go benchmark:
+```go
+
+```
+
+### Results
+| goarch: amd64          |
+| ---------------------- | ----------- | ----------------- |
+| Benchmark1-12          |  1000000000 |  0.000001 ns/op   |
+| Benchmark10-12         |  1000000000 |  0.000001 ns/op   |
+| Benchmark100-12        |  1000000000 |  0.000003 ns/op   |
+| Benchmark1000-12       |  1000000000 |  0.000019 ns/op   |
+| Benchmark10000-12      |  1000000000 |  0.000181 ns/op   |
+| Benchmark100000-12     |  1000000000 |  0.00186 ns/op    |
+| Benchmark1000000-12    |  1000000000 |  0.0182 ns/op     |
+| Benchmark10000000-12   |  1000000000 |  0.0710 ns/op     |
+| Benchmark100000000-12  |  1000000000 |  0.658 ns/op      |
+| Benchmark1000000000-12 |  1          |  6042611600 ns/op |

@@ -3,5 +3,8 @@
 build:
 	mvn clean install
 
-run: build
+java-benchmark: build
 	java -jar target/microbenchmarks.jar -rf csv
+
+go-benchmark:
+	cd go; go test -bench=.
