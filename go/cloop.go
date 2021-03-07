@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-var numbers = []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+var numbers = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
 func sum() int {
 	sum := 0
