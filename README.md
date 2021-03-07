@@ -68,7 +68,7 @@ make go-benchmark
 ```
 
 ### Results
-| goarch: amd64          |
+| goarch: amd64          |             |                   |
 | ---------------------- | ----------- | ----------------- |
 | Benchmark1-12          |  1000000000 |  0.000001 ns/op   |
 | Benchmark10-12         |  1000000000 |  0.000001 ns/op   |
