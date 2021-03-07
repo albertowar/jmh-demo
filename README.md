@@ -4,7 +4,7 @@
 In order to run locally:
 
 ```
-make run
+make java-benchmark
 ```
 
 ### Results
@@ -63,8 +63,8 @@ make run
 ## Go benchmark
 ### How to run
 In order to run the go benchmark:
-```go
-
+```bash
+make go-benchmark
 ```
 
 ### Results
